@@ -102,6 +102,11 @@ public class MainFrame {
 				Release r = new Release();
 				r.release(fileName);
 				refresh();
+				
+				String filename = jtf3.getText();//获取文件名
+				int filesize = Integer.parseInt(jtf2.getText());//获取文件大小
+				UnAssign as = new UnAssign(filename,filesize);
+  				as.setVisible(true);
 			}
 				
 		});
